@@ -1,0 +1,18 @@
+﻿@using AuthoringTagHelpers.Models
+@model WebsiteContext
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<div>
+    <form asp-controller="Home" asp-action="Index" method="post">
+        <Website-InforMation info="Model" />
+        <br /><button type="submit">Register</button>
+    </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
